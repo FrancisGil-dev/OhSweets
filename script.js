@@ -1,13 +1,11 @@
 //function to toggle the Hamburger
+const toggleList = () => {
+    const Icons = document.querySelectorAll('i');
+    const listIcon = Icons[0];
+    const navMenu = document.querySelector('ul.flex.gap-8');
 
-const toggleHamburger = () => {
-    const hamburger = document.getElementById('hamburger');
-
-    hamburger.addEventListener('click', () => {
-        //get the doms
-            const navMenu = document.querySelector('ul');
-            navMenu.classList.toggle('open-hamburger');
-            
-    })
+    //addevent Listener
+    listIcon.addEventListener('click', () => navMenu.classList.toggle('hamburger-open'));
 }
-toggleHamburger();
+toggleList();
+

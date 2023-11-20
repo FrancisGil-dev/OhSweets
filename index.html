@@ -10,32 +10,40 @@
 <body>
     <section class="h-screen">
         <header class="flex justify-between max-w-screen-lg h-20 my-0 mx-auto p-7">
-            <h1 class="text-3xl">Oh' <span class="text-pink-500">Sweets</span></h1>
+            <a class="text-4xl" href="#">Oh' <span class="text-pink-500">Sweets</span></a>
             <nav class="flex items-center">
-                <ul class="flex gap-8 max-[600px]:hidden text-sm">
-                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all">Home</li>
-                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all">About</li>
-                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all">Menu</li>
-                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all">Contacts</li>
+                <ul class="flex gap-8 max-[600px]:hidden text-m">
+                    <li class="cursor-pointer text-pink-500"><a href="/index.html">Home</a></li>
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/about.html">About</a></li>
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/menu.html">Menu</a></li>
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/contact.html">Contacts</a></li>
                 </ul>
                 <i class="bi bi-list text-3xl cursor-pointer hover:text-pink-500 hover:transition-all hidden max-[600px]:block" id="hamburger"></i>
             </nav>
         </header>
+        <!--Main Content-->
+        <div class="content max-[600px]:flex max-[600px]:flex-col p-7 items-center"> 
+            <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96">
+            <!--COntent Info-->
+            <div class="content-info  h-20  w-[600px] p-6">
+                <p class="text-xl">Cookies, those delightful morsels of sweetness, have been captivating taste buds for centuries. From the classic chocolate chip cookie to the adventurous creations of modern pastry chefs, cookies offer a symphony of flavors and textures that never fail to please.</p>
+                <div class="mt-4">
+                    <button class="p-2 bg-pink-500 rounded-md hover:bg-pink-700">Learn More</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <style>
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
-    header h1{font-family: 'Satisfy', sans-serif;}
+    header .text-4xl{font-family: 'Satisfy', sans-serif;}
     nav>ul>li{font-family: 'Poppins', sans-serif;letter-spacing: 1px;}
     /*toggle hamburger Style*/
-    nav>ul.hamburger-open{
-        display: block;
-        position: absolute;
-        top: 10%;
-        right: 35%;
-    }
-   
+    ul.hamburger-open{display: block;position: absolute;top: 10%;right: 35%;}
+    /*Main content*/
+    .content{height: 700px;display: flex;align-items: center;justify-content: center;font-family: 'Poppins',sans-serif;};
+    .content-info p{letter-spacing: 1px;}
 </style>
 <!--Js-->
 <script src="index.js"></script>

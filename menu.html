@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="h-screen">
+        <header class="flex justify-between max-w-screen-lg h-20 my-0 mx-auto p-7">
+            <a class="text-4xl" href="#">Oh' <span class="text-pink-500">Sweets</span></a>
+            <nav class="flex items-center">
+                <ul class="flex gap-8 max-[600px]:hidden text-m">
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/index.html">Home</a></li>
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/about.html">About</a></li>
+                    <li class="cursor-pointer text-pink-500"><a href="/menu.html">Menu</a></li>
+                    <li class="cursor-pointer hover:text-pink-500 hover:transition-all"><a href="/contact.html">Contacts</a></li>
+                </ul>
+                <i class="bi bi-list text-3xl cursor-pointer hover:text-pink-500 hover:transition-all hidden max-[600px]:block" id="hamburger"></i>
+            </nav>
+        </header>
+    </section>
+</body>
+<style>
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
+        header .text-4xl{font-family: 'Satisfy', sans-serif;}
+        nav>ul>li{font-family: 'Poppins', sans-serif;letter-spacing: 1px;}
+        /*toggle hamburger Style*/
+        ul.hamburger-open{display: block;position: absolute;top: 10%;right: 35%;}
+        /*Main content*/
+        .content{height: 700px;display: flex;align-items: center;justify-content: center;font-family: 'Poppins',sans-serif;};
+        .content-info p{letter-spacing: 1px;}
+    </style>
+    <!--Js-->
+    <script src="index.js"></script>
+    <!--Tailwind Css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</html>
