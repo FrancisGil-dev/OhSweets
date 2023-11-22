@@ -9,10 +9,10 @@
 </head>
 <body>
 <section class="h-screen">
-    <header class="flex justify-between items-center max-w-screen-lg h-20 my-0 mx-auto p-7">
-        <a class="text-4xl" href="#">Oh' <span class="text-pink-500 mr-auto">Sweets</span></a>
+    <header class="flex justify-between items-center max-w-screen-lg h-20 my-0 mx-auto p-7 sticky">
+        <a class="text-4xl max-[600px]:text-2xl" href="#">Oh' <span class="text-pink-500 mr-auto">Sweets</span></a>
         <nav class="flex items-center">
-            <ul class="flex gap-8 max-[600px]:hidden text-m">
+            <ul class="flex gap-8 max-[600px]:hidden text-m" id="toggleList">
                 <li class="cursor-pointer text-pink-500">Home</li>
                 <li class="cursor-pointer hover:text-pink-500 hover:transition-all">About</li>
                 <li class="cursor-pointer hover:text-pink-500 hover:transition-all">Menu</li>
@@ -22,18 +22,26 @@
         </nav>
     </header>
     <!--Main Content-->
-    <div class="content flex-grow flex flex-col items-center justify-center">
-        <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96 max-[600px]:h-88">
-        <!--Content Info-->
-        <div class="content-info w-full max-w-screen-lg p-5 text-center">
-            <p class="text-xl py-0 text-lg whitespace-normal text-justify">Indulge in the irresistible world of freshly baked cookies at Sweet Cravings! From classic chocolate chip to exotic matcha-infused delights, our cookies are crafted with love and premium ingredients to satisfy your sweet tooth cravings. Explore our delicious range of cookies, baked to perfection for every occasion. Whether it's a special celebration or a treat for yourself, Sweet Cravings has just the cookie for you.</p>
-            <div class="mt-4">
-                <a class="p-2 bg-pink-500 rounded-md hover:bg-pink-700" href="#">Learn More</a>
+    <div class="flex justify-center items-center h-screen">
+        <div class="max-w-screen-2xl mx-7 flex items-center gap-6 max-[828px]:flex max-[828px]:flex-col"> 
+            <div class="w-[500px]">
+                <h1 class="font-Poppins text-left text-6xl max-[540px]:text-5xl" id="introTitle">Welcome to <span class="font-Satisfy">Oh' <span class="text-pink-500">Sweets</span></span></h1><br>
+                <p class="text-lg max-[540px]:text-m">Step into a world of delightful flavors and irresistible aromas at Oh' Sweets. Our passion for crafting the most exquisite cookies using premium ingredients ensures that each bite is a moment of sheer bliss.</p><br>
+                <a href="#" class="bg-pink-500 p-2 rounded-lg hover:bg-pink-700 ">Learn More</a>
             </div>
+            <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96 max-h-[600px] ml-7 max-[1044px]:h-80  max-[828px]:h-72"> <!-- Adjust the horizontal margin as needed -->
         </div>
     </div>
+    
+    
+    
 </section>
-<section class="h-screen">About</section>
+<!--ABout-->
+<section class="h-screen">
+    <header class="h-20"><h1>About</h1>
+        <p class="text-center mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dolore ea voluptas sed consequuntur iusto dolores.</p></header>
+
+</section>
 <section class="h-screen">Menu</section>
 <section class="h-screen">Contacts</section>
 </body>
@@ -47,6 +55,12 @@
     /*Main content*/
     .content{height: 700px;display: flex;align-items: center;justify-content: center;font-family: 'Poppins',sans-serif;};
     .content-info p{letter-spacing: 1px;}
+    /*Toggle*/
+    #toggleList.toggled {display: block;}
+
+    /*about*/
+    section h1{font-size: 40px;text-align: center;font-family: 'Poppins', sans-serif;letter-spacing: .5px;margin-top: 30px;}   
+
 </style>
 <!--Js-->
 <script src="script.js"></script>
