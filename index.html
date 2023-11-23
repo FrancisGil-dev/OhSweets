@@ -10,7 +10,7 @@
 <body>
 <section class="h-screen">
     <header class="flex justify-between items-center max-w-screen-lg h-20 my-0 mx-auto p-7 sticky">
-        <a class="text-4xl max-[600px]:text-2xl" href="#">Oh' <span class="text-pink-500 mr-auto">Sweets</span></a>
+        <a class="text-4xl max-[600px]:text-3xl" href="#">Oh' <span class="text-pink-500 mr-auto">Sweets</span></a>
         <nav class="flex items-center">
             <ul class="flex gap-8 max-[600px]:hidden text-m" id="toggleList">
                 <li class="cursor-pointer text-pink-500">Home</li>
@@ -22,26 +22,31 @@
         </nav>
     </header>
     <!--Main Content-->
-    <div class="flex justify-center items-center h-screen">
+    <div class="flex justify-center items-center h-screen p-2 max-[456px]:w-auto">
         <div class="max-w-screen-2xl mx-7 flex items-center gap-6 max-[828px]:flex max-[828px]:flex-col"> 
-            <div class="w-[500px]">
-                <h1 class="font-Poppins text-left text-6xl max-[540px]:text-5xl" id="introTitle">Welcome to <span class="font-Satisfy">Oh' <span class="text-pink-500">Sweets</span></span></h1><br>
-                <p class="text-lg max-[540px]:text-m">Step into a world of delightful flavors and irresistible aromas at Oh' Sweets. Our passion for crafting the most exquisite cookies using premium ingredients ensures that each bite is a moment of sheer bliss.</p><br>
-                <a href="#" class="bg-pink-500 p-2 rounded-lg hover:bg-pink-700 ">Learn More</a>
+            <div class="w-[500px] max-[520px]:text-center max-[520px]:p-6">
+                <h1 class="font-Poppins text-left text-6xl max-[540px]:text-5xl max-[520px]:text-center" id="introTitle">Welcome to <span class="font-Satisfy">Oh' <span class="text-pink-500">Sweets</span></span></h1><br>
+                <p class="text-lg max-[540px]:text-m   max-[462px]:text-sm">Step into a world of delightful flavors and irresistible aromas at Oh' Sweets. Our passion for crafting the most exquisite cookies using premium ingredients ensures that each bite is a moment of sheer bliss.</p><br>
+                <a href="#" class="bg-pink-500 p-2 rounded-lg hover:bg-pink-700 max-[380px]:">Learn More</a>
             </div>
-            <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96 max-h-[600px] ml-7 max-[1044px]:h-80  max-[828px]:h-72"> <!-- Adjust the horizontal margin as needed -->
+            <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96 max-h-[600px] ml-7 max-[1044px]:h-80  max-[828px]:h-72 max-[388px]:hidden"><br>
         </div>
     </div>
-    
-    
-    
 </section>
+
+
 <!--ABout-->
 <section class="h-screen">
     <header class="h-20"><h1>About</h1>
-        <p class="text-center mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dolore ea voluptas sed consequuntur iusto dolores.</p></header>
+        <p class="text-center mt-3">Oh' Sweets was born out of a profound love for the art of baking and a desire to share the joy of exquisite cookies with the world. </p>
+    </header>
+   <div class="h-screen flex justify-center items-center">
+    <div class="h-24 w-32 border p-5">
 
-</section>
+    </div>
+    <div></div>
+    <div></div>
+   </div>
 <section class="h-screen">Menu</section>
 <section class="h-screen">Contacts</section>
 </body>
@@ -51,13 +56,12 @@
     header .text-4xl{font-family: 'Satisfy', sans-serif;}
     nav>ul>li{font-family: 'Poppins', sans-serif;letter-spacing: 1px;}
     /*toggle hamburger Style*/
-    ul.hamburger-open{display: block;position: absolute;top: 10%;right: 35%;}
+ 
     /*Main content*/
     .content{height: 700px;display: flex;align-items: center;justify-content: center;font-family: 'Poppins',sans-serif;};
     .content-info p{letter-spacing: 1px;}
     /*Toggle*/
-    #toggleList.toggled {display: block;}
-
+    #toggleList.toggled {display: block;margin-top: 120px;}
     /*about*/
     section h1{font-size: 40px;text-align: center;font-family: 'Poppins', sans-serif;letter-spacing: .5px;margin-top: 30px;}   
 
