@@ -8,7 +8,7 @@ module.exports = {
       },
       fontFamily: {
         custom: ['Poppins', 'sans-serif'],
-       fontFamily: ['Satisfy', 'sans-serif']
+        custom: ['Satisfy', 'sans-serif']
       },
     },
   },
