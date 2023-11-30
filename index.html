@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--Home Section-->
-<section class="h-screen">
+<section class="h-screen max-[880px]:mb-28">
     <header class="flex justify-between items-center max-w-screen-lg h-20 my-0 mx-auto p-7 sticky">
         <a class="text-4xl max-[600px]:text-3xl" href="#">Oh' <span class="text-pink-500 mr-auto">Sweets</span></a>
         <nav class="flex items-center">
@@ -28,7 +28,7 @@
             <div class="w-[520px] p-6 max-[532px]:w-auto max-[438px]:p-5">
                 <h1 class="font-Poppins text-left text-6xl max-[540px]:text-5xl " id="introTitle">Welcome to <span class="font-Satisfy">Oh' <span class="text-pink-500">Sweets</span></span></h1><br>
                 <p class="text-lg max-[540px]:text-sm   max-[462px]:text-sm ">Step into a world of delightful flavors and irresistible aromas at Oh' Sweets. Our passion for crafting the most exquisite cookies using premium ingredients ensures that each bite is a moment of sheer bliss.</p><br>
-                <a href="#" class="bg-pink-500 p-2 rounded-lg hover:bg-pink-700">Learn More</a>
+                <a href="https://www.facebook.com/profile.php?id=100095457186929" class="bg-pink-500 p-2 rounded-lg hover:bg-pink-700">Learn More</a>
             </div>
             <img src="https://clipart-library.com/image_gallery2/Cookie-PNG-File.png" alt="Cookies" class="h-96 max-h-[600px] ml-7 max-[1114px]:h-80  max-[1018px]:h-72 max-[974px]:h-64 max-[462px]:h-64 max-[438px]:h-56 max-[348px]:hidden"><br>
         </div>
@@ -37,13 +37,13 @@
 
 
 <!--About-->
-<section class="h-screen w-auto">
-   <header>
-    <h1>About Our Cookies</h1>
+<section class="h-screen w-auto  max-[880px]:text-sm max-[880px]:mb-28">
+   <header class="max-[880px]:mb-[80px]"> 
+    <h1 class="max-[880px]:text-3xl font-Poppins">About Our Cookies</h1>
    </header>
 
    <!--Main Content-->
-   <main class="flex justify-center items-center h-[90vh] gap-12 w-auto p-6">
+   <main class="flex justify-center items-center h-[90vh] gap-12 w-auto p-6 max-[880px]:flex-col max-[880px]:gap-9 max-[880px]:h-screen max-[880px]:pb-20">
     <!--Sub Main-->
     <div class="border-2 border-solid border-white rounded-xl h-80 w-80 cursor-pointer p-6  hover:bg-pink-500 hover:transition-all hover:border-none hover:duration-[0.5s]">
         <!--Sub Header-->
@@ -69,12 +69,18 @@
     </div>
    </main>
 </section>
-    
+   <br>
+<section class="h-screen w-auto">
+    <header>
+        <h1 class="text-2xl">Our Products</h1>
+    </header>
 </section>
-<section class="h-screen">Menu</section>
 <section class="h-screen">Contacts</section>
 </body>
 <style>
+    *{
+        box-sizing: border-box
+    }
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
     header .text-4xl{font-family: 'Satisfy', sans-serif;}
